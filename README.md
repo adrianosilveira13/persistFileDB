@@ -1,6 +1,8 @@
 ## Usage
 
-/api/save - Save data into a file
+/api/save - Save data into a file  
+Returns 200 if correct data is provided  
+Returns 400 if no data is provided  
 
 ```
 {
@@ -8,7 +10,10 @@
 }
 ```
 
-/api/insert - Persist data into a database
+/api/insert - Persist data into a database  
+Returns 200 on success  
+Returns 400 if data/data.json is empty  
+Returns 500 on fail  
 
 ## ENV SETUP
 ```
